@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetphotoService } from '../../services/getphoto.service';
+import { UserManagementService } from '../../services/user-management.service';
 
 @Component({
   selector: 'app-user',
@@ -11,6 +12,7 @@ export class UserComponent implements OnInit {
   private my_name: string;
   private age: number;
   private email: string;
+  
   private address: {
     street: string,
     city: string,
